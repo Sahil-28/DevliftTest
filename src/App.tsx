@@ -27,7 +27,7 @@ function App() {
   return (
     <div>
       <Router>
-          <Suspense fallback={'loading burrito status...'}>
+          <Suspense fallback={'loading...'}>
             <AuthCheck fallback={<Login />} auth={auth}>
               <Route exact path="/" component={Home} />
             </AuthCheck>
